@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: antiquewhite;
+    padding: 0 12%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(165, 112, 42);
+}
+.menu a{
+color: #333;
+}
+.menu ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}.menu a:hover{
+    color: #6d3131;
+    transition: 0.5s;
+}
+.btn{
+    padding: 8px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #536d31;
+    color: #fff;
+    }
+    .home{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .home h4{
+        font-family: "Monsieur La Doulaise", cursive;
+        font-size: 72px;
+        color: #81522e;
+    }
+    .home h1{
+        font-size: 72px;
+        color: #81522e;
+    }
+    .image{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .image img{
+        width: 20%;
+        height:350px ;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+    .image img:hover{
+        width: 30%;
+        cursor: pointer;
+    }
