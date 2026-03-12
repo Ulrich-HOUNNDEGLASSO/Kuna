@@ -66,7 +66,7 @@ const modalClose = document.getElementById('modal-close');
 
 document.querySelectorAll('.open-modal').forEach(btn => {
     btn.addEventListener('click', () => {
-        const card = btn.closest('.product-card');
+        const card = btn.closest('.product-card') || btn.closest('.product-card-mobile');
         document.getElementById('modal-img').src = card.dataset.img;
         document.getElementById('modal-img').alt = card.dataset.title;
         document.getElementById('modal-title').textContent = card.dataset.title;
