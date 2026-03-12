@@ -1,9 +1,3 @@
-// ===========================
-// KUNA — Scripts principaux
-// ===========================
-
-
-
 // === Navigation scroll ===
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
@@ -64,4 +58,36 @@ revealElements.forEach(el => {
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1)';
     observer.observe(el);
+});
+
+// === Modale produits ===
+const overlay = document.getElementById('modal-overlay');
+const modalClose = document.getElementById('modal-close');
+
+document.querySelectorAll('.open-modal').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const card = btn.closest('.product-card');
+        document.getElementById('modal-img').src = card.dataset.img;
+        document.getElementById('modal-img').alt = card.dataset.title;
+        document.getElementById('modal-title').textContent = card.dataset.title;
+        document.getElementById('modal-desc').textContent = card.dataset.desc;
+        document.getElementById('modal-matiere').textContent = card.dataset.matiere;
+        document.getElementById('modal-prix').textContent = card.dataset.prix;
+        document.getElementById('modal-delai').textContent = card.dataset.delai;
+        document.getElementById('modal-tag').textContent = card.dataset.tag;
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+modalClose?.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+});
+
+overlay?.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
 });

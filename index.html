@@ -51,7 +51,7 @@
             </h1>
             <p class="hero-desc reveal">Mode africaine contemporaine. Chaque pièce raconte une histoire, chaque fil tisse un héritage.</p>
             <div class="hero-actions reveal">
-                <a href="services.html" class="btn-primary">Découvrir la collection</a>
+                <a href="services.html" class="btn-primary">Nos services</a>
                 <a href="biographie.html" class="btn-ghost">Notre histoire →</a>
             </div>
         </div>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="gallery-item g3">
                     <img src="image/Combinaison-oversize-Shibouri.webp" alt="Combinaison Shibouri">
-                    <div class="gallery-label">Shibouri</div>
+                    <div class="gallery-label">Combinaison oversize</div>
                 </div>
             </div>
         </div>
@@ -80,13 +80,13 @@
             <span>Mode Africaine</span><span>✦</span>
             <span>Affirme ton identité</span><span>✦</span>
             <span>Cotonou, Bénin</span><span>✦</span>
-            <span>Collection 2025</span><span>✦</span>
+            <span>Collection 2026</span><span>✦</span>
             <span>Sur Mesure</span><span>✦</span>
             <span>KUNA</span><span>✦</span>
             <span>Mode Africaine</span><span>✦</span>
             <span>Affirme ton identité</span><span>✦</span>
             <span>Cotonou, Bénin</span><span>✦</span>
-            <span>Collection 2025</span><span>✦</span>
+            <span>Collection 2026</span><span>✦</span>
             <span>Sur Mesure</span><span>✦</span>
         </div>
     </div>
@@ -94,16 +94,16 @@
 
 
     <!-- Produits phares -->
-    <section class="products">
+    <section class="products" id="products">
         <div class="section-header">
             <h2>Nos créations <em>signature</em></h2>
         </div>
         <div class="products-grid">
-            <div class="product-card large">
+            <div class="product-card large" data-title="Complet Élégant" data-desc="Tailleur contemporain inspiré des codes vestimentaires africains revisités pour la modernité. Confectionné à la main avec des tissus nobles, ce complet allie élégance et confort pour toutes les occasions." data-matiere="Coton, Lin" data-prix="70 000 FCFA" data-delai="7 à 10 jours" data-tag="Sur mesure" data-img="image/complet.webp">
                 <div class="product-img">
                     <img src="image/complet.webp" alt="Complet Élégant">
                     <div class="product-overlay">
-                        <a href="services.html" class="product-btn">Voir les détails</a>
+                        <button class="product-btn open-modal">Voir les détails</button>
                     </div>
                 </div>
                 <div class="product-info">
@@ -112,11 +112,12 @@
                     <span class="product-tag">Sur mesure</span>
                 </div>
             </div>
-            <div class="product-card">
+
+            <div class="product-card" data-title="Style Africain Moderne" data-desc="Fusion entre patrimoine culturel africain et tendances contemporaines. Une pièce qui affirme votre identité avec audace et raffinement." data-matiere="Wax, Soie" data-prix="60 000 FCFA" data-delai="5 à 7 jours" data-tag="Nouvelle collection" data-img="image/Modern-African.webp">
                 <div class="product-img">
                     <img src="image/Modern-African.webp" alt="Style Africain Moderne">
                     <div class="product-overlay">
-                        <a href="services.html" class="product-btn">Voir les détails</a>
+                        <button class="product-btn open-modal">Voir les détails</button>
                     </div>
                 </div>
                 <div class="product-info">
@@ -125,11 +126,12 @@
                     <span class="product-tag">Nouvelle collection</span>
                 </div>
             </div>
-            <div class="product-card">
+
+            <div class="product-card" data-title="Combinaison Shibouri" data-desc="L'oversize revisité avec élégance. La technique Shibouri apporte des motifs uniques et organiques à cette combinaison moderne et confortable." data-matiere="Coton teint à la main" data-prix="65 000 FCFA" data-delai="10 à 14 jours" data-tag="Exclusif" data-img="image/Combinaison-oversize-Shibouri.webp">
                 <div class="product-img">
                     <img src="image/Combinaison-oversize-Shibouri.webp" alt="Shibouri">
                     <div class="product-overlay">
-                        <a href="services.html" class="product-btn">Voir les détails</a>
+                        <button class="product-btn open-modal">Voir les détails</button>
                     </div>
                 </div>
                 <div class="product-info">
@@ -138,11 +140,12 @@
                     <span class="product-tag">Exclusif</span>
                 </div>
             </div>
-            <div class="product-card">
+
+            <div class="product-card" data-title="Pantalon Baggy" data-desc="Confort et style, sans compromis. Ce pantalon baggy revisité à l'africaine est taillé pour les esprits libres qui refusent de choisir entre tendance et aisance." data-matiere="Denim, Coton" data-prix="60 000 FCFA" data-delai="3 à 5 jours" data-tag="Best-seller" data-img="image/Baggy-pant.webp">
                 <div class="product-img">
                     <img src="image/Baggy-pant.webp" alt="Pantalon Baggy">
                     <div class="product-overlay">
-                        <a href="services.html" class="product-btn">Voir les détails</a>
+                        <button class="product-btn open-modal">Voir les détails</button>
                     </div>
                 </div>
                 <div class="product-info">
@@ -150,7 +153,7 @@
                     <p>Confort et style, sans compromis.</p>
                     <span class="product-tag">Best-seller</span>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
 
@@ -181,14 +184,15 @@
 
     <!-- CTA -->
     <section class="cta-section">
+        <div class="cta-img">
+            <img src="image/Bg.webp" alt="KUNA création">
+        </div>
         <div class="cta-inner">
-            <h2>Prêt à affirmer<br><em>votre identité ?</em></h2>
+            <h2><em>Prêt à affirmer votre identité ?</em></h2>
             <p>Prenez rendez-vous pour une consultation personnalisée. Nous créons la pièce parfaite pour vous.</p>
             <a href="contact.html" class="btn-primary large">Prendre rendez-vous</a>
         </div>
-        <div class="cta-img">
-            <img src="image/First.webp" alt="KUNA création">
-        </div>
+        
     </section>
 
     <!-- Footer -->
@@ -219,10 +223,37 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 KUNA. Tous droits réservés.</p>
+            <p>© 2026 KUNA. Tous droits réservés.</p>
         </div>
     </footer>
-
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <button class="modal-close" id="modal-close">✕</button>
+            <div class="modal-img">
+                <img src="" alt="" id="modal-img">
+            </div>
+            <div class="modal-body">
+                <span class="modal-tag" id="modal-tag"></span>
+                <h2 class="modal-title" id="modal-title"></h2>
+                <p class="modal-desc" id="modal-desc"></p>
+                <div class="modal-details">
+                    <div class="modal-detail">
+                        <span class="modal-detail-label">Matières</span>
+                        <span id="modal-matiere"></span>
+                    </div>
+                    <div class="modal-detail">
+                        <span class="modal-detail-label">Prix</span>
+                        <span id="modal-prix"></span>
+                    </div>
+                    <div class="modal-detail">
+                        <span class="modal-detail-label">Délai de confection</span>
+                        <span id="modal-delai"></span>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn-primary">Commander cette pièce</a>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
