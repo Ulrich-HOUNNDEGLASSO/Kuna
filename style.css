@@ -487,6 +487,12 @@ body {
     margin-top: 60px;
 }
 .cta-inner .btn-primary:hover { background: var(--gold); border-color: var(--gold); }
+
+.cta-section { min-height: 400px; }
+.cta-inner { 
+    min-height: 400px;
+    width: 100%;
+}
 .cta-img {
     position: absolute;
     inset: 0;
@@ -494,6 +500,7 @@ body {
 .cta-img img {
     width: 100%;
     height: 100vh;
+    min-height: 400px;
     object-fit: cover;
     object-position: center ;
     display: block;
