@@ -1,75 +1,228 @@
- <!DOCTYPE html>
- <html lang="fr">
- <head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KUNA - Affirme ton identité !</title>
-    <link rel="icon" size="180x180px" href=kuna-favicon.ico>
+    <title>KUNA — Affirme ton identité</title>
+    <link rel="icon" size="180x180px" href="image/kuna-favicon.ico">
+    <meta name="description" content="KUNA, marque de mode africaine contemporaine. Des créations uniques qui affirment votre identité.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
- </head>
- <body>
-    <header>
-        <div class="logo"><img src="logo.webp" alt="Logo de mon site"></div>
-        <nav class="menu">
-            <ul>
-                <li>
-                   <a href="index.html">Accueil</a> 
-                </li>
-                <li>
-                   <a href="Services.html">Services</a>
-                </li>
-                <li>
-                   <a href="Biographie.html"> À propos</a> 
-                </li>
-                <button class="btn"> <a href="contact.html">Contacts</a> </button>
+</head>
+<body>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="home">
-            <div class="vue">
-             <h4>Kuna</h4>
-             <h1>Affirme ton identité</h1>
-            </div>
-            <div class="image">
-                <img src="image/complet.jpg" alt="">
-                <img src="image/Modern African.jpg" alt="">
-                <img src="image/Combinaison oversize Shibouri.jpg" alt="">
-                <img src="image/First.jpg" alt="">
+
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-logo">
+            <div class="logo"><img src="image/logo.webp" alt="Logo Kunà"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Accueil</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="biographie.html" class="nav-link">À propos</a>
+            <a href="contact.html" class="nav-link nav-cta">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="biographie.html">À propos</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-grain"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal">
+                <span class="line">Affirme</span>
+                <span class="line italic">ton</span>
+                <span class="line">identité</span>
+            </h1>
+            <p class="hero-desc reveal">Mode africaine contemporaine. Chaque pièce raconte une histoire, chaque fil tisse un héritage.</p>
+            <div class="hero-actions reveal">
+                <a href="services.html" class="btn-primary">Découvrir la collection</a>
+                <a href="biographie.html" class="btn-ghost">Notre histoire →</a>
             </div>
         </div>
-    </main>
-    <section class="featured">
-        <h2>Produits Phares</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <img src="image/complet.jpg" alt="Complet">
-                <h3>Complet Élégant</h3>
-            </div>
-            <div class="product-item">
-                <img src="image/Modern African.jpg" alt="Modern African">
-                <h3>Style Africain Moderne</h3>
-            </div>
-            <div class="product-item">
-                <img src="image/Combinaison oversize Shibouri.jpg" alt="Combinaison">
-                <h3>Combinaison Oversize</h3>
-            </div>
-            <div class="product-item">
-                <img src="image/Baggy pant.jpg" alt="Baggy Pant">
-                <h3>Pantalon Baggy</h3>
+        <div class="hero-gallery">
+            <div class="gallery-track">
+                <div class="gallery-item g1">
+                    <img src="image/complet.webp" alt="Complet Élégant KUNA">
+                    <div class="gallery-label">Complet Élégant</div>
+                </div>
+                <div class="gallery-item g2">
+                    <img src="image/Modern-African.webp" alt="Style Africain Moderne">
+                    <div class="gallery-label">Style Africain</div>
+                </div>
+                <div class="gallery-item g3">
+                    <img src="image/Combinaison-oversize-Shibouri.webp" alt="Combinaison Shibouri">
+                    <div class="gallery-label">Shibouri</div>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 KUNA. Tous droits réservés.</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
+
+    <!-- Bande défilante -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>KUNA</span><span>✦</span>
+            <span>Mode Africaine</span><span>✦</span>
+            <span>Affirme ton identité</span><span>✦</span>
+            <span>Cotonou, Bénin</span><span>✦</span>
+            <span>Collection 2025</span><span>✦</span>
+            <span>Sur Mesure</span><span>✦</span>
+            <span>KUNA</span><span>✦</span>
+            <span>Mode Africaine</span><span>✦</span>
+            <span>Affirme ton identité</span><span>✦</span>
+            <span>Cotonou, Bénin</span><span>✦</span>
+            <span>Collection 2025</span><span>✦</span>
+            <span>Sur Mesure</span><span>✦</span>
+        </div>
+    </div>
+
+
+
+    <!-- Produits phares -->
+    <section class="products">
+        <div class="section-header">
+            <h2>Nos créations <em>signature</em></h2>
+        </div>
+        <div class="products-grid">
+            <div class="product-card large">
+                <div class="product-img">
+                    <img src="image/complet.webp" alt="Complet Élégant">
+                    <div class="product-overlay">
+                        <a href="services.html" class="product-btn">Voir les détails</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Complet Élégant</h3>
+                    <p>Tailleur contemporain inspiré des codes vestimentaires africains revisités pour la modernité.</p>
+                    <span class="product-tag">Sur mesure</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="image/Modern-African.webp" alt="Style Africain Moderne">
+                    <div class="product-overlay">
+                        <a href="services.html" class="product-btn">Voir les détails</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Style Africain Moderne</h3>
+                    <p>Fusion entre patrimoine et tendance.</p>
+                    <span class="product-tag">Nouvelle collection</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="image/Combinaison-oversize-Shibouri.webp" alt="Shibouri">
+                    <div class="product-overlay">
+                        <a href="services.html" class="product-btn">Voir les détails</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Combinaison Shibouri</h3>
+                    <p>L'oversize revisité avec élégance.</p>
+                    <span class="product-tag">Exclusif</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="image/Baggy-pant.webp" alt="Pantalon Baggy">
+                    <div class="product-overlay">
+                        <a href="services.html" class="product-btn">Voir les détails</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Pantalon Baggy</h3>
+                    <p>Confort et style, sans compromis.</p>
+                    <span class="product-tag">Best-seller</span>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Chiffres clés -->
+    <section class="stats">
+        <div class="stats-inner">
+            <div class="stat-item">
+                <div class="stat-number">+500</div>
+                <div class="stat-label">Clients satisfaits</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Années d'expertise</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Fait à la main</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Possibilités créatives</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-inner">
+            <h2>Prêt à affirmer<br><em>votre identité ?</em></h2>
+            <p>Prenez rendez-vous pour une consultation personnalisée. Nous créons la pièce parfaite pour vous.</p>
+            <a href="contact.html" class="btn-primary large">Prendre rendez-vous</a>
+        </div>
+        <div class="cta-img">
+            <img src="image/First.webp" alt="KUNA création">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">KUNA</div>
+                <p>Mode africaine contemporaine.<br>Cotonou, Bénin.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="biographie.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>+229 01 57 75 35 80</p>
+                <p>ulrichhnsdk@gmail.com</p>
+                <p>Lun–Ven, 9h–18h</p>
+            </div>
+            <div class="footer-social">
+                <h4>Réseaux</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 KUNA. Tous droits réservés.</p>
+        </div>
     </footer>
- </body>
- </html>
+
+    <script src="main.js"></script>
+</body>
+</html>

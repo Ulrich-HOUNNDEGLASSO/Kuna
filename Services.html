@@ -1,55 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KUNA - Affirme ton identité !</title>
-    <link rel="icon" size="180x180px" href=kuna-favicon.ico>
+    <title>KUNA — Nos Services</title>
+    <link rel="icon" size="180x180px" href="image/kuna-favicon.ico">
+    <meta name="description" content="Découvrez les services KUNA : création personnalisée, tailoring expert et consultation style.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-      <div class="logo"><img src="logo.webp" alt="Logo de mon site"></div>
-        <nav class="menu">
-            <ul>
-                <li>
-                   <a href="index.html">Accueil</a> 
-                </li>
-                <li>
-                   <a href="Services.html">Services</a>
-                </li>
-                <li>
-                   <a href="Biographie.html"> À propos</a> 
-                </li>
-                <button class="btn"> <a href="contact.html">Contacts</a> </button>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="services">
-            <h2>Nos Services</h2>
-            <div class="service-grid">
-                <div class="service-item">
-                    <img src="image/Combinaison oversize Shibouri.jpg" alt="Conception Personnalisée">
-                    <h3>Conception Personnalisée</h3>
-                    <p>Créez des pièces uniques qui reflètent votre style personnel. Notre équipe de designers travaille avec vous pour concevoir des vêtements sur mesure.</p>
+    <nav class="nav scrolled" id="nav">
+        <div class="nav-logo">
+            <div class="logo"><img src="image/logo.webp" alt="Logo Kunà"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="services.html" class="nav-link active">Services</a>
+            <a href="biographie.html" class="nav-link">À propos</a>
+            <a href="contact.html" class="nav-link nav-cta">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="biographie.html">À propos</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="page-hero">
+        <h1>Nos <em>Services</em></h1>
+    </section>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-card-img">
+                <img src="image/Combinaison-oversize-Shibouri.webp" alt="Conception Personnalisée">
+            </div>
+            <div class="service-card-body">
+                <div class="service-card-number">01 — Création</div>
+                <h3>Conception Personnalisée</h3>
+                <p>Travaillez en étroite collaboration avec nos créateurs pour concevoir des pièces uniques qui reflètent exactement votre style et votre personnalité. Du croquis au vêtement fini, chaque étape est pensée pour vous.</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-card-img">
+                <img src="image/Baggy-pant.webp" alt="Tailoring">
+            </div>
+            <div class="service-card-body">
+                <div class="service-card-number">02 — Expertise</div>
+                <h3>Tailoring & Retouches</h3>
+                <p>Notre atelier de couture prend en charge tous vos besoins d'ajustement. Que ce soit une simple retouche ou une transformation complète d'une pièce, nos artisans garantissent un résultat parfait.</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-card-img">
+                <img src="image/Modern-African.webp" alt="Consultation Style">
+            </div>
+            <div class="service-card-body">
+                <div class="service-card-number">03 — Conseil</div>
+                <h3>Consultation Style</h3>
+                <p>Un rendez-vous individuel avec notre styliste pour explorer les couleurs, coupes et matières qui mettent en valeur votre silhouette et expriment votre identité unique.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process -->
+    <section style="padding: 80px 60px; background: var(--black); color: var(--ivory);">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="font-family: var(--font-serif); font-size: clamp(36px,5vw,60px); font-weight:300; margin: 20px 0 60px; color: var(--ivory);">Notre <em style="color: var(--gold);">processus</em></h2>
+            <div style="display: grid; grid-template-columns: repeat(4,1fr); gap: 40px;">
+                <div>
+                    <div style="font-family:var(--font-mono); font-size:11px; letter-spacing:.2em; color:var(--gold); margin-bottom:16px;">ÉTAPE 01</div>
+                    <h4 style="font-family:var(--font-serif); font-size:24px; font-weight:300; margin-bottom:12px; color:var(--ivory);">Premier contact</h4>
+                    <p style="font-size:14px; color:rgba(245,240,232,.6); line-height:1.7;">Prenez rendez-vous pour discuter de votre projet, vos inspirations et vos attentes.</p>
                 </div>
-                <div class="service-item">
-                    <img src="image/Baggy pant.jpg" alt="Tailoring">
-                    <h3>Tailoring</h3>
-                    <p>Profitez de nos services de couture experte pour ajuster vos vêtements à la perfection. De la retouche à la création complète.</p>
+                <div>
+                    <div style="font-family:var(--font-mono); font-size:11px; letter-spacing:.2em; color:var(--gold); margin-bottom:16px;">ÉTAPE 02</div>
+                    <h4 style="font-family:var(--font-serif); font-size:24px; font-weight:300; margin-bottom:12px; color:var(--ivory);">Conception</h4>
+                    <p style="font-size:14px; color:rgba(245,240,232,.6); line-height:1.7;">Nos créateurs élaborent les croquis et sélectionnent les matières avec vous.</p>
                 </div>
-                <div class="service-item">
-                    <img src="image/Modern African.jpg" alt="Consultation Style">
-                    <h3>Consultation Style</h3>
-                    <p>Obtenez des conseils personnalisés pour affirmer votre identité à travers votre garde-robe. Découvrez les tendances qui vous conviennent.</p>
+                <div>
+                    <div style="font-family:var(--font-mono); font-size:11px; letter-spacing:.2em; color:var(--gold); margin-bottom:16px;">ÉTAPE 03</div>
+                    <h4 style="font-family:var(--font-serif); font-size:24px; font-weight:300; margin-bottom:12px; color:var(--ivory);">Réalisation</h4>
+                    <p style="font-size:14px; color:rgba(245,240,232,.6); line-height:1.7;">Nos artisans confectionnent votre pièce avec soin, essayages inclus.</p>
+                </div>
+                <div>
+                    <div style="font-family:var(--font-mono); font-size:11px; letter-spacing:.2em; color:var(--gold); margin-bottom:16px;">ÉTAPE 04</div>
+                    <h4 style="font-family:var(--font-serif); font-size:24px; font-weight:300; margin-bottom:12px; color:var(--ivory);">Livraison</h4>
+                    <p style="font-size:14px; color:rgba(245,240,232,.6); line-height:1.7;">Votre création vous est remise avec les instructions d'entretien personnalisées.</p>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 KUNA. Tous droits réservés.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">KUNA</div>
+                <p>Mode africaine contemporaine.<br>Cotonou, Bénin.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="biographie.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>+229 01 57 75 35 80</p>
+                <p>ulrichhnsdk@gmail.com</p>
+                <p>Lun–Ven, 9h–18h</p>
+            </div>
+            <div class="footer-social">
+                <h4>Réseaux</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 KUNA. Tous droits réservés.</p>
+        </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

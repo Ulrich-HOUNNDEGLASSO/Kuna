@@ -1,63 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KUNA - Affirme ton identité !</title>
-    <link rel="icon" size="180x180px" href=kuna-favicon.ico>
+    <title>KUNA — Contact</title>
+    <link rel="icon" type="image/x-icon" href="image/kuna-favicon.ico">
+    <meta name="description" content="Contactez KUNA pour une consultation personnalisée ou pour toute information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-      <div class="logo"><img src="logo.webp" alt="Logo de mon site"></div>
-        <nav class="menu">
-            <ul>
-                <li>
-                   <a href="index.html">Accueil</a> 
-                </li>
-                <li>
-                   <a href="Services.html">Services</a>
-                </li>
-                <li>
-                   <a href="Biographie.html"> À propos</a> 
-                </li>
-                <button class="btn"> <a href="contact.html">Contacts</a> </button>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="contact">
-            <h2>Contactez-nous</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Informations de Contact</h3>
-                    <p><strong>Adresse :</strong> Cotonou, Bénin</p>
-                    <p><strong>Téléphone :</strong> +229 01 57 75 35 80 </p>
-                    <p><strong>Email :</strong> ulrichhnsdk@gmail.com</p>
-                    <p><strong>Heures d'ouverture :</strong> Lundi - Vendredi, 9h - 18h</p>
-                </div>
-                <form>
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" required>
+    <nav class="nav scrolled" id="nav">
+        <div class="nav-logo">
+            <div class="logo"><img src="image/logo.webp" alt="Logo Kunà"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="biographie.html" class="nav-link">À propos</a>
+            <a href="contact.html" class="nav-link active nav-cta">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="biographie.html">À propos</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
-                    <label for="prenom">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom" required>
+    <section class="page-hero">
+        <h1>Nous <em>contacter</em></h1>
+    </section>
 
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="telephone">Téléphone :</label>
-                    <input type="tel" id="telephone" name="telephone">
-
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit">Envoyer</button>
-                </form>
+    <div class="contact-section">
+        <div class="contact-info-block">
+            <h2>Votre projet<br><em>commence ici</em></h2>
+            <div class="contact-detail">
+                <label>Adresse</label>
+                <p>Cotonou, Bénin</p>
             </div>
-        </section>
-    </main>
+            <div class="contact-detail">
+                <label>Téléphone</label>
+                <p>+229 01 57 75 35 80</p>
+            </div>
+            <div class="contact-detail">
+                <label>Email</label>
+                <p>ulrichhnsdk@gmail.com</p>
+            </div>
+            <div class="contact-detail">
+                <label>Heures d'ouverture</label>
+                <p>Lundi — Vendredi<br>9h00 — 18h00</p>
+            </div>
+            <div class="contact-detail">
+                <label>Réseaux sociaux</label>
+                <p>@kuna.benin</p>
+            </div>
+        </div>
 
+        <form class="contact-form" action="https://formspree.io/f/xojkdgwb" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="+229 ...">
+            </div>
+            <div class="form-group">
+                <label for="sujet">Sujet</label>
+                <input type="text" id="sujet" name="sujet" placeholder="Demande de devis, consultation style...">
+            </div>
+            <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Décrivez votre projet, vos inspirations..." required></textarea>
+            </div>
+            <div class="form-submit">
+                <button type="submit" class="btn-primary">Envoyer le message</button>
+                <button type="reset" class="btn-reset">Effacer</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">KUNA</div>
+                <p>Mode africaine contemporaine.<br>Cotonou, Bénin.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="biographie.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>+229 01 57 75 35 80</p>
+                <p>ulrichhnsdk@gmail.com</p>
+                <p>Lun–Ven, 9h–18h</p>
+            </div>
+            <div class="footer-social">
+                <h4>Réseaux</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 KUNA. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>

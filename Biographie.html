@@ -1,48 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KUNA - Affirme ton identité !</title>
-    <link rel="icon" size="180x180px" href=kuna-favicon.ico>
+    <title>KUNA — Notre Histoire</title>
+    <link rel="icon" size="180x180px" href="kuna-favicon.ico">
+    <meta name="description" content="L'histoire de KUNA, marque de mode africaine contemporaine fondée à Cotonou, Bénin.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/kuna-favicon.ico">
 </head>
 <body>
-    <header>
-      <div class="logo"><img src="logo.webp" alt="Logo de mon site"></div>
-        <nav class="menu">
-            <ul>
-                <li>
-                   <a href="index.html">Accueil</a> 
-                </li>
-                <li>
-                   <a href="Services.html">Services</a>
-                </li>
-                <li>
-                   <a href="Biographie.html"> À propos</a> 
-                </li>
-                <button class="btn"> <a href="contact.html">Contacts</a> </button>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="biographie">
-            <h2>À Propos de KUNA</h2>
-            <div class="bio-content">
-                <div class="bio-text">
-                    <p>KUNA est née de la passion pour l'expression personnelle à travers la mode. Fondée par des créateurs visionnaires, notre marque s'inspire des cultures africaines modernes et des tendances contemporaines pour offrir des vêtements qui affirment votre identité unique.</p>
-                    <p>Chaque pièce est conçue avec soin, en mettant l'accent sur la qualité, l'originalité et le confort. Nous croyons que la mode est un moyen de raconter votre histoire, et nous sommes là pour vous aider à la raconter avec style.</p>
+    <nav class="nav scrolled" id="nav">
+        <div class="nav-logo">
+            <div class="logo"><img src="image/logo.webp" alt="Logo Kunà"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="biographie.html" class="nav-link active">À propos</a>
+            <a href="contact.html" class="nav-link nav-cta">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="biographie.html">À propos</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="page-hero">
+        <h1>Notre <em>histoire</em></h1>
+    </section>
+
+    <div class="bio-section">
+        <div class="bio-text">
+            <h2>Née d'une passion pour l'<em>expression</em></h2>
+            <p>KUNA est née à Cotonou, au cœur du Bénin, d'une conviction simple mais profonde : la mode est un acte d'affirmation. Ce n'est pas seulement ce que l'on porte, c'est ce que l'on dit au monde sans prononcer un seul mot.</p>
+            <p>Fondée par des créateurs visionnaires issus de la culture africaine contemporaine, KUNA puise son inspiration dans la richesse des traditions vestimentaires du continent tout en les réinterprétant avec un regard résolument moderne.</p>
+            <p>Chaque collection est un dialogue entre le passé et le présent, entre l'héritage et l'innovation, entre la technique artisanale et les tendances contemporaines.</p>
+        </div>
+        <div class="bio-images-grid">
+            <img src="image/Bakus-Oraya-_1_.webp" alt="Création KUNA">
+            <img src="image/Black-_-White-.webp" alt="Style KUNA">
+        </div>
+    </div>
+
+    <!-- Valeurs -->
+    <section style="padding: 80px 60px; background: white;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="font-family:var(--font-serif); font-size:clamp(36px,5vw,56px); font-weight:300; margin:20px 0 60px;">Nos <em style="font-style:italic; color:var(--earth);">valeurs</em></h2>
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:40px;">
+                <div style="padding: 40px 32px; background: var(--ivory); border-radius: 4px;">
+                    <div style="font-family:var(--font-mono); font-size:28px; font-weight:700; color:var(--earth); margin-bottom:20px;">✦</div>
+                    <h3 style="font-family:var(--font-serif); font-size:28px; font-weight:400; margin-bottom:16px;">Authenticité</h3>
+                    <p style="font-size:15px; color:var(--grey); line-height:1.7;">Chaque pièce reflète une vérité. Nous ne suivons pas la mode, nous créons la vôtre.</p>
                 </div>
-                <div class="bio-images">
-                    <img src="image/Bakus Oraya (1).jpg" alt="Fondateur">
-                    <img src="image/Black & White .jpg" alt="Équipe">
+                <div style="padding: 40px 32px; background: var(--ivory); border-radius: 4px;">
+                    <div style="font-family:var(--font-mono); font-size:28px; font-weight:700; color:var(--earth); margin-bottom:20px;">✦</div>
+                    <h3 style="font-family:var(--font-serif); font-size:28px; font-weight:400; margin-bottom:16px;">Artisanat</h3>
+                    <p style="font-size:15px; color:var(--grey); line-height:1.7;">La qualité n'est pas un accident. Chaque couture est le résultat d'un savoir-faire cultivé avec patience.</p>
+                </div>
+                <div style="padding: 40px 32px; background: var(--ivory); border-radius: 4px;">
+                    <div style="font-family:var(--font-mono); font-size:28px; font-weight:700; color:var(--earth); margin-bottom:20px;">✦</div>
+                    <h3 style="font-family:var(--font-serif); font-size:28px; font-weight:400; margin-bottom:16px;">Héritage</h3>
+                    <p style="font-size:15px; color:var(--grey); line-height:1.7;">L'Afrique est notre source d'inspiration infinie. Nous la portons avec fierté dans chaque création.</p>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 KUNA. Tous droits réservés.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">KUNA</div>
+                <p>Mode africaine contemporaine.<br>Cotonou, Bénin.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="biographie.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>+229 01 57 75 35 80</p>
+                <p>ulrichhnsdk@gmail.com</p>
+                <p>Lun–Ven, 9h–18h</p>
+            </div>
+            <div class="footer-social">
+                <h4>Réseaux</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 KUNA. Tous droits réservés.</p>
+        </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
