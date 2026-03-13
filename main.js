@@ -91,3 +91,21 @@ overlay?.addEventListener('click', (e) => {
         document.body.style.overflow = '';
     }
 });
+
+const contactForm = document.getElementById('contact-form');
+const formSuccess = document.getElementById('form-success');
+
+contactForm?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(contactForm);
+    const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+        contactForm.reset();
+        contactForm.style.display = 'none';
+        formSuccess.classList.add('visible');
+    }
+});
