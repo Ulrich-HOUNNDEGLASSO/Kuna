@@ -761,6 +761,8 @@ body {
 }
 .btn-reset:hover { color: var(--black); }
 
+.products-mobile { display: none; } /* masqué sur desktop */
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
     .hero { grid-template-columns: 1fr; padding: 120px 40px 60px; }
@@ -954,8 +956,6 @@ body {
     transition: background 0.3s;
 }
 .modal-close:hover { background: var(--earth); }
-
-.products-mobile { display: none; } /* masqué sur desktop */
 
 @media (max-width: 768px) {
     .modal { grid-template-columns: 1fr; }
