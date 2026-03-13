@@ -761,6 +761,19 @@ body {
 }
 .btn-reset:hover { color: var(--black); }
 
+.form-success {
+    display: none;
+    padding: 20px 24px;
+    background: rgba(170, 255, 0, 0.1);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--black);
+}
+.form-success.visible { display: block; }
+
 .products-mobile { display: none; } /* masqué sur desktop */
 
 /* ===== RESPONSIVE ===== */
