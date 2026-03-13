@@ -1,4 +1,4 @@
-
+tu
 
 :root {
     --ivory: #F5F0E8;
@@ -957,13 +957,14 @@ body {
 }
 .modal-close:hover { background: var(--earth); }
 
+.products-mobile { display: none; } /* masqué sur desktop */
+
 @media (max-width: 768px) {
     .modal { grid-template-columns: 1fr; }
     .modal-img { height: 250px; }
     .modal-body { padding: 32px 24px; }
 }
 /* ===== CARDS MOBILES PRODUITS ===== */
-.products-mobile { display: none; } /* masqué sur desktop */
 
 .product-card-mobile {
     background: white;
