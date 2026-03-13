@@ -326,6 +326,7 @@ body {
 }
 .section-header h2 em { font-style: italic; color: var(--earth); }
 
+.products-mobile { display: none; }
 .products-grid {
     max-width: 1200px;
     margin: 0 auto;
