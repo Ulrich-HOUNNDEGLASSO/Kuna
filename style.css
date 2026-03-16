@@ -227,7 +227,16 @@ body {
     transition: color 0.3s, letter-spacing 0.3s;
 }
 .btn-ghost:hover { color: var(--gold); letter-spacing: 0.1em; }
-
+.btn-ghost-products {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color 0.3s, letter-spacing 0.3s;
+}
+.btn-ghost-products:hover { color: var(--earth); letter-spacing: 0.1em; }
 /* ===== HERO GALLERY ===== */
 .hero-gallery {
     position: relative;
@@ -763,16 +772,55 @@ body {
 
 .form-success {
     display: none;
-    padding: 20px 24px;
-    background: rgba(170, 255, 0, 0.1);
-    border: 1px solid var(--gold);
-    border-radius: 2px;
-    font-family: var(--font-mono);
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    color: var(--black);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 40px;
+    gap: 24px;
 }
-.form-success.visible { display: block; }
+.form-success.visible { display: flex; }
+
+.checkmark-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scaleIn 0.4s var(--transition) forwards;
+}
+.checkmark {
+    width: 50px;
+    height: 50px;
+    stroke: var(--gold);
+    stroke-width: 3.5;
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    fill: none;
+    animation: drawCheck 0.6s var(--transition) 0.4s forwards;
+}
+.form-success-title {
+    font-family: var(--font-serif);
+    font-size: 36px;
+    font-weight: 300;
+}
+.form-success-title em { font-style: italic; color: var(--earth); }
+.form-success-msg {
+    font-size: 20px;
+    color: var(--grey);
+    line-height: 1.7;
+    max-width: 360px;
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+@keyframes drawCheck {
+    to { stroke-dashoffset: 0; }
+}
 
 .products-mobile { display: none; } /* masqué sur desktop */
 
