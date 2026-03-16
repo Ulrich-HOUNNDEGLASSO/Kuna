@@ -848,7 +848,8 @@ body {
     .hamburger { display: flex; }
 
     /* === Hero === */
-    .hero { padding: 90px 20px 50px; }
+    .hero { min-height: auto;
+    padding: 90px 20px 50px; }
     .hero-title { font-size: clamp(48px, 12vw, 72px); margin-bottom: 16px; }
     .hero-desc { font-size: 14px; margin-bottom: 32px; }
     .hero-actions { gap: 20px; }
